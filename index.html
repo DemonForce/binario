@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transición Binaria</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .binary-title {
+            font-size: 3em;
+            margin: 10px 0;
+            opacity: 0;
+            transform: translateY(-50px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+        .binary-title.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .binary-title span {
+            display: inline-block;
+            transition: all 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="binary-title">BITCODER</div>
+    <div class="binary-title">DEVELOPER</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
